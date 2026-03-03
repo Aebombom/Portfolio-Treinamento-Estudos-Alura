@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --cor--primaria: #000000;
+    --cor--secundaria:  #c50202e0;
+    --cor--terciaria: #8b0808f3;
+    --cor--quaternaria:#ffffff;
+
+    --fonte--titilo:"Krona One", sans-serif;
+    --fonte--texto:"Merriweather", sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor--primaria);
+    color:var(--cor--quaternaria);
+} 
+
+.cabecalho{
+    padding:2% 0% 0% 13%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.cabecalho__menu__links{
+    font-family: var(--fonte--texto);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--cor--secundaria);
+    cursor:pointer;
+    text-decoration:none;
+    display: flex;
+    gap: 8px;
+}
+
+.cabecalho__menu__links:hover{
+    color: var(--cor--quaternaria);
+    font-size: 26px;
+}
+
+.apresentacao {
+    padding: 6% 13%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.apresentacao__conteudo{
+    display: flex;
+    flex-direction:column;
+    width: 615px;
+    gap: 40px;
+}
+
+.apresentacao__conteudo__titulo{
+    font-size: 36px;
+    font-family: var(--fonte--titilo);
+}
+
+.titulo-destaque {
+    color: var(--cor--secundaria);  
+}
+
+.apresentacao__conteudo__paragrafo{
+    font-size: 24px;
+    font-family: var(--fonte--texto);
+}
+
+.apresentacao__links {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 36px;
+}
+
+.apresentacao__links__subtitulo{
+    font-family: var(--fonte--titilo); 
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.apresentacao__links__botoes{
+    display:flex;
+    justify-content:center;
+    gap: 16px;
+    border-radius: 8px;
+    text-align: center;
+    border:2px solid var(--cor--terciaria);
+    width:378px;
+    font-size: 24px;
+    padding: 21.5px 0;
+    text-decoration:none ;
+    color: var(--cor--quaternaria);
+    font-family: var(--fonte--texto);
+    font-weight: 600;
+}
+
+.apresentacao__links__botoes:hover {
+    background-color: var(--cor--secundaria) ;
+}
+
+.apresentacao__imagem {
+    background-image:url("./assets/Bombom.png");
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    width: 480px;
+    height: 550px;
+    border: 5px solid var(--cor--quaternaria);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.apresentacao__imagem:hover{
+    background-image: url("./assets/Bombom__linguinha.png");
+}
+
+.apresentacao__conteudo__gif{
+    border: 5px solid var(--cor--terciaria);
+}
+
+.rodape {
+    color: var(--cor--primaria) ;
+    background-color: var(--cor--secundaria);
+    padding: 18px;
+    border-top: 6px solid var(--cor--terciaria);
+    text-align: center;
+    font-family: var(--fonte--texto);
+    font-weight: 600;
+    font-size:18px;
+}
