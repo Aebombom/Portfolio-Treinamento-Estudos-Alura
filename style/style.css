@@ -141,6 +141,7 @@ body {
     font-weight: 600;
     font-size:1.12rem;
 }
+
 @media(max-width:1000px) {
     .cabecalho{
         padding: 10%;
@@ -160,5 +161,11 @@ body {
     }
     .apresentacao__conteudo__gif{
         width: 80%;
+    }
+}
+
+@media(max-width:450px) {
+    .apresentacao__imagem {
+    height: 20rem;
     }
 }
